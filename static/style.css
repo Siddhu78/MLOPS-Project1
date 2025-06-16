@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #90caf9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 0.8s ease-in;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #42a5f5;
+    outline: none;
+}
+
+/* Button Styling */
+button[type="Submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="Submit"]:hover {
+    background-color: #1565c0;
+    transform: scale(1.03);
+}
+
+/* Result Message Styling */
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+    background-color: #00796b;
+    animation: slideUp 0.6s ease-out;
+}
+
+.result p {
+    margin: 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
